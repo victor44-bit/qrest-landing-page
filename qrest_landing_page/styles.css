@@ -1,0 +1,37 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom right, #6a0dad, #a26de3);
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+.logo {
+    width: 100px;
+    margin-top: 20px;
+}
+.store-buttons img {
+    width: 150px;
+    margin: 10px;
+}
+.slider {
+    margin-top: 30px;
+    overflow: hidden;
+    width: 100%;
+}
+.slides {
+    display: flex;
+    width: 300%;
+    animation: slide 15s infinite;
+}
+.slides img {
+    width: 100%;
+    height: auto;
+}
+@keyframes slide {
+    0% {transform: translateX(0);}
+    33% {transform: translateX(-100%);}
+    66% {transform: translateX(-200%);}
+    100% {transform: translateX(0);}
+}
